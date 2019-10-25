@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 4</title>
+</head>
+<body>
+    <h1>Welcome to page4</h1>
+    
+    <!-- links or URLs are always GET resources as they are getting (retrieving) a resource -->
+    <a href="/">Home</a>
+    <a href="/page2">Page 2</a>
+    <a href="/page3">Page 3</a>
+    <a href="/getName">Show Name</a>
+
+    {{#if allDogs}}
+    <ul>
+        {{#each allDogs}}
+        <li>{{this.name}} is a(n) {{this.breed}} dog, who is {{this.age}}</li>
+        {{/each}}
+    </ul>
+    {{/if}}
+</body>
+</html>
